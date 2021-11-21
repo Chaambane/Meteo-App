@@ -4,10 +4,23 @@ class FormInput extends Component {
     state= {
         cityName: ""
     }
+
+    handleSubmitCity = async(e) => {
+        if(e.key === "Enter") {
+            await this.props.loadData(this.state.cityName);
+        }
+    }
+
     render() {
         return (
             <div className="mt-4 title">
-                <input type="text" className="form-control w-50 p-4 text-center fw-bold rounded-pill fw-bold fs-2" placeholder="Entrez la ville Exp: Montpellier"/>
+                <input type="text" 
+                    className="form-control w-50 p-4 text-center fw-bold rounded-pill fw-bold fs-2" 
+                    placeholder="Ville Exp: Montpellier"
+                    onChange={(e) => this.setState({cityName: e.target.value})}
+                    value={this.state.cityName}
+                    onKeyPress={this.handleSubmitCity}
+                />
             </div>
         )
     };
