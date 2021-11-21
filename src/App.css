@@ -19,3 +19,12 @@ main{
   display: flex;
   justify-content: center;
 }
+
+.temp {
+  margin-top: 2rem;
+  background: white !important;
+}
+.detailsTemp {
+  opacity: 0.7;
+  font-weight: bold !important;
+}

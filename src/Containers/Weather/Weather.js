@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Title from '../../Components/Title/Title';
 import FormInput from '../FormInput/FormInput';
+import Temp from './Temp/Temp';
 
 class Weather extends Component {
     render() {
@@ -8,11 +9,7 @@ class Weather extends Component {
             <main className="container-fluid p-2">
                 <Title>Météo-App</Title>
                 <FormInput/>
-                <div>
-                    box card :
-                    <div> - card Temp</div>
-                    <div> - card Détails</div>
-                </div>
+                <Temp/>
             </main>
         )
     };
