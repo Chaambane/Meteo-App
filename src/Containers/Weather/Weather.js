@@ -16,7 +16,7 @@ class Weather extends Component {
         await axios.get(URL, {
             params: {
                 q: cityName,
-                units: "metrics",
+                units: "metric",
                 lang: "fr",
                 appid: APIKEY
             }
@@ -35,7 +35,9 @@ class Weather extends Component {
             <main className="container-fluid p-2">
                 <Title>Météo-App</Title>
                 <FormInput loadData = {this.handleLoadData}/>
-                <Temp/>
+                {
+                    this.state.weather && <Temp {...this.state.weather}/>
+                }
             </main>
         )
     };
