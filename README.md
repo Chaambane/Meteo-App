@@ -11,7 +11,7 @@ Installer le projet:
 lancer le projet:
 - npm start
 
-Le projet s'ouvre sur <h2>localhost:30000</h2> 
+Le projet s'ouvre sur <h2>localhost:3000</h2> 
 
 chaambane.faidine@gmail.com
 
