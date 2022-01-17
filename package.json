@@ -1,5 +1,6 @@
 {
   "name": "meteo-app",
+  "homepage": "http://www.fmchaambane.com/react/meteo/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
