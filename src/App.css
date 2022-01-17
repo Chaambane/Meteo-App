@@ -11,8 +11,9 @@ main{
   width: 100vw;
   height: 100vh;
   background-image: url(./Assets/images/bgImg.jpg);
-  background-size: 100vw 100vh;
-  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-repeat: repeat-y !important;
+  background-color: black;
 }
 
 .title {
@@ -27,4 +28,10 @@ main{
 .detailsTemp {
   opacity: 0.7;
   font-weight: bold !important;
+}
+
+@media screen and (max-width: 500px) {
+  input {
+    width: 15px;
+  }
 }
